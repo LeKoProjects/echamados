@@ -18,5 +18,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@anb.com',
             'password' => bcrypt('12345678')],
         ]);
+
+        DB::table('chamados')->insert([
+            ['descricao' => '1234',
+            'status' => 'Aberto',
+            'setor' => 'Suporte'],
+        ]);
     }
 }
